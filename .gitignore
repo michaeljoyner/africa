@@ -10,3 +10,4 @@ Homestead.yaml
 .DS_Store
 workspace.xml
 /public/media/**/*
+/public/compliance

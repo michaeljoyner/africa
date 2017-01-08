@@ -1,0 +1,72 @@
+#expedition-signup-form {
+
+  width: 100%;
+
+  .form-group {
+    margin-bottom: 1em;
+  }
+
+  label {
+    text-transform: uppercase;
+    color: $brand_dark;
+    font-size: 80%;
+  }
+
+  .error-msg {
+    display: inline-block;
+    font-size: 80%;
+    padding-left: 20px;
+    color: $brand_red;
+  }
+
+  input {
+    width: 100%;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 1em;
+    border: 1px solid $brand_dark;
+    padding-left: 5px;
+
+    &.has-error {
+      background: lighten($brand_alt_red, 40%);
+    }
+  }
+
+  textarea {
+    width: 100%;
+    display: inline-block;
+    height: 4em;
+    font-size: 1em;
+    border: 1px solid $brand_dark;
+    padding: 5px;
+  }
+
+  .modal-btn-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid $brand_red;
+    padding-top: 20px;
+
+    .modal-action-btn {
+      min-width: 250px;
+      margin: 0 0 0 20px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+    }
+
+    .modal-cancel-btn {
+      background: none;
+      color: $brand_dark;
+      border: none;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      font-size: 1em;
+      cursor: pointer;
+      color: $text_grey;
+    }
+  }
+}

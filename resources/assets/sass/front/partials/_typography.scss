@@ -1,0 +1,67 @@
+.heavy-heading {
+  font-family: $strong_text;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.heavy-text {
+  font-family: $strong_text;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-family: $strong_text;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+  color: $brand_red;
+
+  @include respond-to(phone) { font-size: 2em; }
+}
+
+.light-heading {
+  font-family: $regular_text;
+  font-weight: 700;
+}
+
+.body-text {
+  font-family: $regular_text;
+  line-height: 1.4;
+}
+
+
+
+.white-text {
+  color: $white;
+}
+
+.red-text {
+  color: $brand_red;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.page-text {
+  width: 800px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.large-text {
+  font-size: 1.5em;
+
+  @include respond-to(phone) { font-size: 1.2em; }
+}
+
+.page-intro {
+  text-align: center;
+  font-family: $regular_text;
+  font-size: 2em;
+  max-width: 800px;
+  margin: 80px auto;
+
+}

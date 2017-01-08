@@ -1,5 +1,14 @@
+$nav_height: 60px;
 
-// Body
+//typography
+$strong_text: 'Boycott', 'Roboto', sans-serif;
+$regular_text: 'Rubik', serif;
+
+//colours
+//$brand_dark: #242120;
+$brand_dark: #2e2e34;
+$brand_red: #9B292D;
+$brand_alt_red: #D84C58;// Body
 $body-bg: transparent;
 
 // Borders
@@ -23,11 +32,11 @@ $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: rebeccapurple;
-$navbar-inverse-bg: rebeccapurple;
+$navbar-default-bg: indianred;
+$navbar-inverse-bg: indianred;
 $navbar-inverse-color: #fff;
 $navbar-inverse-link-active-color: #fff;
-$navbar-inverse-link-color: yellow;
+$navbar-inverse-link-color: #fff;
 $navbar-border-radius: 0;
 
 // Buttons
@@ -50,4 +59,4 @@ $primary_red: #EF6060;
 $white: #ffffff;
 $danger: #ff4850;
 $text_grey: #888;
-$eggshell: #e2e2e2;
+$eggshell: #f4fbfd;

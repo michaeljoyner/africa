@@ -7,6 +7,9 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "shared/sweetalert";
+
+@import "admin/general";
 @import "admin/partials/buttons";
 @import "admin/partials/forms";
 @import "admin/partials/gallery";
@@ -18,4 +21,6 @@
 @import "admin/partials/toggleswitch";
 @import "admin/partials/loginpage";
 @import "admin/partials/passwordresetrequest";
-
+@import "admin/partials/editor";
+@import "admin/partials/featuredimages";
+@import "admin/partials/albumindex";

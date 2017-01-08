@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Blog\Post;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -38,5 +39,15 @@ class User extends Authenticatable
     {
         $this->password = $newPassword;
         $this->save();
+    }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class, 'user_id');
+    }
+
+    public function createPost($title, $description = null)
+    {
+        return $this->posts()->create(['title' => $title, 'description' => $description]);
     }
 }

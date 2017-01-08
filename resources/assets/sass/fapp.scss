@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Boycott';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../fonts/boycott.ttf) format('woff');
+}
+
+// Variables
+@import "variables";
+
+@import "mixins/media";
+@import "shared/sweetalert";
+@import "admin/partials/spinner";
+@import "admin/partials/modalvue";
+
+@import "front/base";
+@import "front/partials/navbar";
+@import "front/partials/footer";
+@import "front/partials/typography";
+@import "front/partials/pageheaders";
+@import "front/partials/pagesections";
+@import "front/partials/lightbox";
+@import "front/partials/buttons";
+//home
+@import "front/home/page";
+@import "front/home/members";
+@import "front/home/compliance";
+
+//gallery
+@import "front/gallery/page";
+
+//contact
+@import "front/contact/page";
+@import "front/contact/form";
+
+
+//expeditions
+@import "front/expeditions/index";
+@import "front/expeditions/show";
+@import "front/expeditions/signupwidget";
+
+//news
+@import "front/news/index";
+@import "front/news/show";

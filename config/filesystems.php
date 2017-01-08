@@ -45,18 +45,33 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+            'root'   => storage_path('app'),
+        ],
+
+        'compliance' => [
+            'driver' => 'local',
+            'root'   => public_path(env('COMPLIANCE_FOLDER', 'compliance')),
+        ],
+
+        'media' => [
+            'driver' => 'local',
+            'root'   => public_path('media'),
+        ],
+
+        'test_media' => [
+            'driver' => 'local',
+            'root'   => public_path('test_media'),
         ],
 
         'public' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public'),
+            'driver'     => 'local',
+            'root'       => storage_path('app/public'),
             'visibility' => 'public',
         ],
 
         's3' => [
             'driver' => 's3',
-            'key' => 'your-key',
+            'key'    => 'your-key',
             'secret' => 'your-secret',
             'region' => 'your-region',
             'bucket' => 'your-bucket',

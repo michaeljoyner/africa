@@ -32,4 +32,11 @@ abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $user;
     }
+
+    public function assertSoftDeleted(\Illuminate\Database\Eloquent\Model $model)
+    {
+        $model = $model->fresh();
+//        $model = $model->withTrashed()->find($model->id);
+        $this->assertTrue($model->trashed());
+    }
 }

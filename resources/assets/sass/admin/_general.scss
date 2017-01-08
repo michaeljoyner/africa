@@ -1,0 +1,15 @@
+.is-2-column {
+  column-count: 2;
+  column-gap: 50px;
+
+  & > div {
+    break-inside: avoid;
+  }
+}
+
+.info-label {
+  text-transform: uppercase;
+  color: $primary_dark;
+  font-size: 80%;
+  margin-bottom: 0;
+}

@@ -60,6 +60,9 @@ return [
         'name' => 'Example',
     ],
 
+    'site_receiver' => ['Mooz' => 'mooz@example.com'],
+    'site_sender' => ['AFC Site' => 'noreply@afc.com'],
+
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol

@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Africa Freedom Climbers',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,7 +166,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
+        Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
         //
 
         /*
@@ -177,6 +178,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ViewComposerProvider::class
 
     ],
 

@@ -1,0 +1,22 @@
+.btn, a.btn {
+  display: inline-block;
+  margin: 1em auto;
+  height: 40px;
+  line-height: 40px;
+  color: $white;
+  text-align: center;
+  font-family: $regular_text;
+  font-weight: 700;
+  background: $brand_red;
+  padding: 0 30px;
+  border: none;
+  font-size: 1em;
+
+  &.block-btn {
+    display: block;
+  }
+
+  &:hover {
+    background: $brand_alt_red;
+  }
+}

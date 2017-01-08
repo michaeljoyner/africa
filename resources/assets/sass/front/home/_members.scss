@@ -1,0 +1,41 @@
+.team-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+  .team-member {
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 250px;
+    margin-bottom: 50px;
+
+    @include respond-to(phone) { width: 80%; flex-basis: auto; }
+
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+
+      &.round {
+        border-radius: 50%;
+        max-width: 70%;
+      }
+    }
+
+    .member-name {
+      font-size: 1.2em;
+      margin-bottom: 0;
+    }
+
+    .member-info {
+      margin-top: 8px;
+      font-size: 90%;
+    }
+
+
+  }
+}

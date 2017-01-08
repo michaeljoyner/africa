@@ -1,0 +1,42 @@
+.expeditions-banner {
+  background: url(../../images/banners/expeditions.jpg);
+  background-size: cover;
+}
+
+.expeditions-index {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .expedition-index-card {
+    width: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin-bottom: 60px;
+
+    @include respond-to(phone) { width: 90%; }
+
+    &:last-of-type {
+      margin-right: auto;
+      margin-left: 5%;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .btn.block-btn.expedition-card-btn {
+      width: 100%;
+    }
+
+    .expedition-description {
+      margin-bottom: 45px;
+    }
+
+  }
+}

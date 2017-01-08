@@ -24,5 +24,8 @@
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
         <env name="DB_CONNECTION" value="testing"/>
+        <env name="MAIL_DRIVER" value="log"/>
+        <env name="MEDIA_FILE_SYSTEM" value="test_media"/>
+        <env name="COMPLIANCE_FOLDER" value="test_compliance"/>
     </php>
 </phpunit>

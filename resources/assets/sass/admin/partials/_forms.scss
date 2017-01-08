@@ -16,9 +16,26 @@
     max-height: 120px;
   }
 
+  .dd-tall-textbox {
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .dd-supertall-textbox {
+    height: 600px;
+    max-height: 600px;
+  }
+
   &.form-narrow {
     display: block;
     max-width: 400px;
     margin: 0 auto;
+  }
+}
+
+.char-counting-input {
+
+  .usage-count.warn {
+    background: $danger;
   }
 }

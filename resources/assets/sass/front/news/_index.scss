@@ -1,0 +1,29 @@
+.article-index-card {
+  max-width: 800px;
+  margin: 2em auto;
+  display: flex;
+  background: $eggshell;
+
+  .article-image {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 50%;
+
+    img {
+      max-width: 80%;
+
+    }
+  }
+
+  .article-overview {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 50%;
+
+    .article-title {
+      margin: 5px 0 5px 0;
+    }
+  }
+}

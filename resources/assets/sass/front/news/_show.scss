@@ -1,0 +1,39 @@
+.article-show {
+
+  .article-published-date {
+    text-align: center;
+  }
+
+  .social-sharing-icons {
+    text-align: center;
+  }
+
+  .article-body {
+    max-width: 800px;
+    width: 95%;
+    margin: 2em auto;
+    font-family: $regular_text;
+    line-height: 1.8;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .back-to-news {
+    //display: block;
+    width: 240px;
+    //margin: 1em auto;
+    //text-align: center;
+    //color: $brand_dark;
+    //border: 1px solid;
+    //font-family: $regular_text;
+    //text-transform: uppercase;
+    //height: 40px;
+    //line-height: 40px;
+
+    //&:hover {
+    //  color: $brand_alt_red;
+    //}
+  }
+}

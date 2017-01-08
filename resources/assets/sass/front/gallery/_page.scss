@@ -1,0 +1,18 @@
+.gallery-banner {
+  background: url(../../images/banners/gallery.jpg);
+  background-size: cover;
+}
+
+.albums-grid {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .media-image-card {
+    min-width: 240px;
+    max-width: 250px;
+    margin: 15px;
+  }
+}
