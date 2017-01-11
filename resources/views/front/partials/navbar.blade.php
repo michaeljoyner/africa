@@ -1,7 +1,8 @@
 <nav class="main-navbar">
     <div class="branding">
         <a href="/">
-            <img src="/images/logos/navlogo.png" alt="Africa Freedom Climbers logo">
+            <span class="scrolled-branding">Afrika Freedom Climbers</span>
+            {{--<img src="/images/logos/navlogo.png" alt="Africa Freedom Climbers logo">--}}
             <span class="branding-text">AFC</span>
         </a>
     </div>

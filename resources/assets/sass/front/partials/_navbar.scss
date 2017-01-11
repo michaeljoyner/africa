@@ -1,3 +1,8 @@
+.scrolled .main-navbar {
+  .branding .scrolled-branding {
+    transform: translate3d(0, 0, 0);
+  }
+}
 .main-navbar  {
   position: fixed;
   top: 0;
@@ -17,6 +22,20 @@
     flex-shrink: 0;
     flex-basis: 100px;
     align-items: flex-start;
+
+    .scrolled-branding {
+      transition: .4s ease;
+      transform: translate3d(0, -100px, 0);
+      font-family: $strong_text;
+      font-size: 24px;
+      color: $brand_red;
+      padding-left: 25px;
+      display: inline-block;
+      width: 330px;
+      text-shadow: 1px 1px 0px $brand_dark;
+
+      @include respond-to(phone) {display: none;}
+    }
 
     .branding-text {
       display: none;

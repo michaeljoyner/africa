@@ -1,4 +1,3 @@
-
 window.swal = require('sweetalert');
 window.Vue = require('vue');
 

@@ -16,9 +16,12 @@
                  json_encode($media->galleryImages()->map(function($image) { return ['src' => $image->getUrl()]; })->toArray())
                  }}'
                     ></dd-lightbox>
-                    <p class="media-image-card-title heavy-heading">{{ $media->title }}</p>
+                    <p class="media-image-card-title light-heading">{{ $media->title }}</p>
                 </div>
             @endforeach
+                @foreach(range(1,3 - ($albums->count() % 3)) as $index)
+                    <div class="media-image-card"></div>
+                @endforeach
         </div>
     </section>
 @endsection

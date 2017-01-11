@@ -1248,7 +1248,7 @@ body.stop-scrolling {
 
 .modal-header h3 {
   margin-top: 0;
-  color: #9B292D;
+  color: #BF4E42;
   text-transform: uppercase;
 }
 
@@ -1340,16 +1340,21 @@ input:-webkit-autofill {
 }
 
 .social-icon-row > a:hover {
-  border-color: #D84C58;
+  border-color: #E56558;
 }
 
 .social-icon-row > a:hover svg path {
-  fill: #D84C58;
+  fill: #E56558;
 }
 
 .social-icon-row .social-icon {
   width: 100%;
   height: 100%;
+}
+
+.scrolled .main-navbar .branding .scrolled-branding {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .main-navbar {
@@ -1362,7 +1367,7 @@ input:-webkit-autofill {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  border-bottom: 1px solid #9B292D;
+  border-bottom: 1px solid #BF4E42;
   z-index: 1000;
   background: #ffffff;
 }
@@ -1378,11 +1383,31 @@ input:-webkit-autofill {
   align-items: flex-start;
 }
 
+.main-navbar .branding .scrolled-branding {
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+  font-family: "Boycott", "Roboto", sans-serif;
+  font-size: 24px;
+  color: #BF4E42;
+  padding-left: 25px;
+  display: inline-block;
+  width: 330px;
+  text-shadow: 1px 1px 0px #2e2e34;
+}
+
+@media only screen and (max-width: 719px) {
+  .main-navbar .branding .scrolled-branding {
+    display: none;
+  }
+}
+
 .main-navbar .branding .branding-text {
   display: none;
   padding-left: 25px;
   font-family: "Boycott", "Roboto", sans-serif;
-  color: #9B292D;
+  color: #BF4E42;
   font-size: 40px;
 }
 
@@ -1549,7 +1574,7 @@ input:-webkit-autofill {
 
 @media only screen and (max-width: 719px) {
   .main-navbar .main-nav-list .nav-item {
-    color: #9B292D;
+    color: #BF4E42;
   }
 }
 
@@ -1558,7 +1583,7 @@ input:-webkit-autofill {
 }
 
 .main-navbar .main-nav-list .nav-item.active {
-  color: #9B292D;
+  color: #BF4E42;
 }
 
 @-webkit-keyframes slideIn {
@@ -1688,11 +1713,11 @@ input:-webkit-autofill {
 }
 
 .main-footer .social-icon-row > a:hover {
-  border-color: #D84C58;
+  border-color: #E56558;
 }
 
 .main-footer .social-icon-row > a:hover svg path {
-  fill: #D84C58;
+  fill: #E56558;
 }
 
 .heavy-heading {
@@ -1712,7 +1737,7 @@ input:-webkit-autofill {
   text-transform: uppercase;
   text-align: center;
   font-size: 3em;
-  color: #9B292D;
+  color: #BF4E42;
 }
 
 @media only screen and (max-width: 719px) {
@@ -1736,7 +1761,7 @@ input:-webkit-autofill {
 }
 
 .red-text {
-  color: #9B292D;
+  color: #BF4E42;
 }
 
 .centered-text {
@@ -1771,17 +1796,20 @@ input:-webkit-autofill {
 .page-header {
   width: 100vw;
   height: 40vw;
-  background: #9B292D;
+  background: #BF4E42;
 }
 
 .page-section {
   padding: 50px 0 50px;
   position: relative;
-  border-bottom: 1px solid #888;
 }
 
 .page-section:last-of-type {
   border-bottom: none;
+}
+
+.page-divider {
+  width: 100%;
 }
 
 .dd-lightbox {
@@ -1801,7 +1829,7 @@ input:-webkit-autofill {
 }
 
 .dd-lightbox .close-lightbox-btn:hover {
-  color: #d3575c;
+  color: #d9958e;
 }
 
 .dd-lightbox img {
@@ -1850,7 +1878,7 @@ input:-webkit-autofill {
 }
 
 .dd-lightbox .lightbox-nav-arrow:hover {
-  color: #d3575c;
+  color: #d9958e;
 }
 
 .dd-lightbox .dd-next-arrow {
@@ -1896,7 +1924,7 @@ input:-webkit-autofill {
   text-align: center;
   font-family: "Rubik", serif;
   font-weight: 700;
-  background: #9B292D;
+  background: #BF4E42;
   padding: 0 30px;
   border: none;
   font-size: 1em;
@@ -1907,12 +1935,93 @@ input:-webkit-autofill {
 }
 
 .btn:hover, a.btn:hover {
-  background: #D84C58;
+  background: #E56558;
 }
 
 .home-banner {
-  background: url(../../images/banners/home.jpeg);
+  background: url(../../images/banners/home.jpg);
   background-size: cover;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-banner img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 500px;
+  max-width: 60%;
+  -webkit-animation: dropIn .75s ease-in both;
+  animation: dropIn .75s ease-in both;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.home-banner .logo-backer {
+  background: #ffffff;
+  opacity: .7;
+  height: 100%;
+  width: 700px;
+  -webkit-animation: slideUpIn .75s ease-in both;
+  animation: slideUpIn .75s ease-in both;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.about-section .body-text {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+@-webkit-keyframes dropIn {
+  0% {
+    -webkit-transform: translate3d(-50%, -650px, 0);
+    transform: translate3d(-50%, -650px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    -webkit-transform: translate3d(-50%, -650px, 0);
+    transform: translate3d(-50%, -650px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+@-webkit-keyframes slideUpIn {
+  0% {
+    -webkit-transform: translate3d(0, 40vw, 0);
+    transform: translate3d(0, 40vw, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideUpIn {
+  0% {
+    -webkit-transform: translate3d(0, 40vw, 0);
+    transform: translate3d(0, 40vw, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .team-container {
@@ -1995,7 +2104,7 @@ input:-webkit-autofill {
 }
 
 .compliance-documents .document .document-title:hover {
-  color: #D84C58;
+  color: #E56558;
 }
 
 .gallery-banner {
@@ -2038,7 +2147,7 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-size: 80%;
   font-family: "Rubik", serif;
-  color: #9B292D;
+  color: #BF4E42;
 }
 
 .contact-form-outer form input {
@@ -2048,7 +2157,7 @@ input:-webkit-autofill {
   line-height: 32px;
   font-size: 1em;
   width: 100%;
-  border: 1px solid #2e2e34;
+  border: 1px solid #888;
 }
 
 .contact-form-outer form textarea {
@@ -2058,25 +2167,11 @@ input:-webkit-autofill {
   height: 150px;
   width: 100%;
   resize: none;
-  border: 1px solid #2e2e34;
+  border: 1px solid #888;
 }
 
 .contact-form-outer form button[type=submit] {
   width: 100%;
-  border: 1px solid #2e2e34;
-  text-transform: uppercase;
-  font-family: "Rubik", serif;
-  font-weight: 700;
-  margin: 1em 0;
-  height: 40px;
-  line-height: 40px;
-  font-size: 1em;
-  color: #ffffff;
-  background: #9B292D;
-}
-
-.contact-form-outer form button[type=submit]:hover {
-  background: #D84C58;
 }
 
 .expeditions-banner {
@@ -2156,7 +2251,7 @@ input:-webkit-autofill {
   display: inline-block;
   font-size: 80%;
   padding-left: 20px;
-  color: #9B292D;
+  color: #BF4E42;
 }
 
 #expedition-signup-form input {
@@ -2170,7 +2265,7 @@ input:-webkit-autofill {
 }
 
 #expedition-signup-form input.has-error {
-  background: #fcf4f4;
+  background: white;
 }
 
 #expedition-signup-form textarea {
@@ -2189,7 +2284,7 @@ input:-webkit-autofill {
   justify-content: flex-end;
   -webkit-box-align: center;
   align-items: center;
-  border-top: 1px solid #9B292D;
+  border-top: 1px solid #BF4E42;
   padding-top: 20px;
 }
 

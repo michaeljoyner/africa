@@ -24,7 +24,7 @@
       line-height: 32px;
       font-size: 1em;
       width: 100%;
-      border: 1px solid $brand_dark;
+      border: 1px solid $text_grey;
     }
 
     textarea {
@@ -34,25 +34,11 @@
       height: 150px;
       width: 100%;
       resize: none;
-      border: 1px solid $brand_dark;
+      border: 1px solid $text_grey;
     }
 
     button[type=submit] {
       width: 100%;
-      border: 1px solid $brand_dark;
-      text-transform: uppercase;
-      font-family: $regular_text;
-      font-weight: 700;
-      margin: 1em 0;
-      height: 40px;
-      line-height: 40px;
-      font-size: 1em;
-      color: $white;
-      background: $brand_red;
-
-      &:hover {
-        background: $brand_alt_red;
-      }
     }
   }
 }

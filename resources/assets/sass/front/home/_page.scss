@@ -1,4 +1,47 @@
 .home-banner {
-  background: url(../../images/banners/home.jpeg);
+  background: url(../../images/banners/home.jpg);
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 500px;
+    max-width: 60%;
+    animation: dropIn .75s ease-in both;
+    animation-delay: .5s;
+  }
+
+  .logo-backer {
+    background: $white;
+    opacity: .7;
+    height: 100%;
+    width: 700px;
+    animation: slideUpIn .75s ease-in both;
+    animation-delay: .5s;
+  }
 }
+
+.about-section {
+  .body-text {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
+
+@keyframes dropIn {
+  0% {transform: translate3d(-50%,-650px,0);}
+  100% {transform: translate3d(-50%,-50%,0);}
+}
+
+@keyframes slideUpIn {
+  0% {transform: translate3d(0,40vw,0);}
+  100% {transform: translate3d(0,0,0);}
+}
+
