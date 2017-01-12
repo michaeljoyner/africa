@@ -1,8 +1,17 @@
+.news-banner {
+  background: url(../../images/banners/news.jpeg);
+  background-size: cover;
+}
+
 .article-index-card {
   max-width: 600px;
   margin: 2em auto;
   display: flex;
   background: $eggshell;
+
+  &:hover {
+    box-shadow: 0 0 10px $primary_blue;
+  }
 
   .article-image {
     flex-grow: 1;

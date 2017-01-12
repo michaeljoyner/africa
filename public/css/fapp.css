@@ -2313,12 +2313,21 @@ input:-webkit-autofill {
   color: #888;
 }
 
+.news-banner {
+  background: url(../../images/banners/news.jpeg);
+  background-size: cover;
+}
+
 .article-index-card {
   max-width: 600px;
   margin: 2em auto;
   display: -webkit-box;
   display: flex;
   background: #f4fbfd;
+}
+
+.article-index-card:hover {
+  box-shadow: 0 0 10px #81CDBC;
 }
 
 .article-index-card .article-image {

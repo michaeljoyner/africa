@@ -1,7 +1,7 @@
 @extends('front.base')
 
 @section('content')
-    <header class="page-header expeditions-banner">
+    <header class="page-header news-banner">
 
     </header>
     <section class="page-section">
