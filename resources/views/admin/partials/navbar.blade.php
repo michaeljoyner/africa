@@ -8,8 +8,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">
-                {{--<img src="{{ asset('images/chars.jpg') }}" alt="logo"/>--}}
+            <a class="navbar-brand" href="/" target="_blank">
+                <img src="{{ asset('images/tofront.svg') }}" width="20" height="20" alt="logo"/>
             </a>
         </div>
 
