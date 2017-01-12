@@ -1248,7 +1248,7 @@ body.stop-scrolling {
 
 .modal-header h3 {
   margin-top: 0;
-  color: #BF4E42;
+  color: #A62931;
   text-transform: uppercase;
 }
 
@@ -1340,11 +1340,11 @@ input:-webkit-autofill {
 }
 
 .social-icon-row > a:hover {
-  border-color: #E56558;
+  border-color: #BF3037;
 }
 
 .social-icon-row > a:hover svg path {
-  fill: #E56558;
+  fill: #BF3037;
 }
 
 .social-icon-row .social-icon {
@@ -1367,7 +1367,7 @@ input:-webkit-autofill {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  border-bottom: 1px solid #BF4E42;
+  border-bottom: 1px solid #A62931;
   z-index: 1000;
   background: #ffffff;
 }
@@ -1390,7 +1390,7 @@ input:-webkit-autofill {
   transform: translate3d(0, -100px, 0);
   font-family: "Boycott", "Roboto", sans-serif;
   font-size: 24px;
-  color: #BF4E42;
+  color: #A62931;
   padding-left: 25px;
   display: inline-block;
   width: 330px;
@@ -1407,7 +1407,7 @@ input:-webkit-autofill {
   display: none;
   padding-left: 25px;
   font-family: "Boycott", "Roboto", sans-serif;
-  color: #BF4E42;
+  color: #A62931;
   font-size: 40px;
 }
 
@@ -1574,7 +1574,7 @@ input:-webkit-autofill {
 
 @media only screen and (max-width: 719px) {
   .main-navbar .main-nav-list .nav-item {
-    color: #BF4E42;
+    color: #A62931;
   }
 }
 
@@ -1583,7 +1583,7 @@ input:-webkit-autofill {
 }
 
 .main-navbar .main-nav-list .nav-item.active {
-  color: #BF4E42;
+  color: #A62931;
 }
 
 @-webkit-keyframes slideIn {
@@ -1689,6 +1689,10 @@ input:-webkit-autofill {
   line-height: 1.5;
 }
 
+.main-footer .footer-column ul li:hover a {
+  color: #FF4D4D;
+}
+
 @media only screen and (max-width: 719px) {
   .main-footer .contact {
     -webkit-box-ordinal-group: 2;
@@ -1713,11 +1717,11 @@ input:-webkit-autofill {
 }
 
 .main-footer .social-icon-row > a:hover {
-  border-color: #E56558;
+  border-color: #FF4D4D;
 }
 
 .main-footer .social-icon-row > a:hover svg path {
-  fill: #E56558;
+  fill: #FF4D4D;
 }
 
 .heavy-heading {
@@ -1737,7 +1741,7 @@ input:-webkit-autofill {
   text-transform: uppercase;
   text-align: center;
   font-size: 3em;
-  color: #BF4E42;
+  color: #A62931;
 }
 
 @media only screen and (max-width: 719px) {
@@ -1761,7 +1765,7 @@ input:-webkit-autofill {
 }
 
 .red-text {
-  color: #BF4E42;
+  color: #A62931;
 }
 
 .centered-text {
@@ -1776,7 +1780,7 @@ input:-webkit-autofill {
 }
 
 .large-text {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 @media only screen and (max-width: 719px) {
@@ -1796,7 +1800,7 @@ input:-webkit-autofill {
 .page-header {
   width: 100vw;
   height: 40vw;
-  background: #BF4E42;
+  background: #A62931;
 }
 
 .page-section {
@@ -1829,7 +1833,7 @@ input:-webkit-autofill {
 }
 
 .dd-lightbox .close-lightbox-btn:hover {
-  color: #d9958e;
+  color: #d75e66;
 }
 
 .dd-lightbox img {
@@ -1878,7 +1882,7 @@ input:-webkit-autofill {
 }
 
 .dd-lightbox .lightbox-nav-arrow:hover {
-  color: #d9958e;
+  color: #d75e66;
 }
 
 .dd-lightbox .dd-next-arrow {
@@ -1924,7 +1928,7 @@ input:-webkit-autofill {
   text-align: center;
   font-family: "Rubik", serif;
   font-weight: 700;
-  background: #BF4E42;
+  background: #A62931;
   padding: 0 30px;
   border: none;
   font-size: 1em;
@@ -1935,7 +1939,7 @@ input:-webkit-autofill {
 }
 
 .btn:hover, a.btn:hover {
-  background: #E56558;
+  background: #BF3037;
 }
 
 .home-banner {
@@ -2104,7 +2108,7 @@ input:-webkit-autofill {
 }
 
 .compliance-documents .document .document-title:hover {
-  color: #E56558;
+  color: #BF3037;
 }
 
 .gallery-banner {
@@ -2147,7 +2151,7 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-size: 80%;
   font-family: "Rubik", serif;
-  color: #BF4E42;
+  color: #A62931;
 }
 
 .contact-form-outer form input {
@@ -2230,7 +2234,7 @@ input:-webkit-autofill {
 
 .expedition-show .join-btn.btn.block-btn {
   margin-top: 50px;
-  width: 200px;
+  width: 300px;
 }
 
 #expedition-signup-form {
@@ -2251,7 +2255,7 @@ input:-webkit-autofill {
   display: inline-block;
   font-size: 80%;
   padding-left: 20px;
-  color: #BF4E42;
+  color: #A62931;
 }
 
 #expedition-signup-form input {
@@ -2260,12 +2264,12 @@ input:-webkit-autofill {
   height: 32px;
   line-height: 32px;
   font-size: 1em;
-  border: 1px solid #2e2e34;
+  border: 1px solid #888;
   padding-left: 5px;
 }
 
 #expedition-signup-form input.has-error {
-  background: white;
+  background: #f2c9cb;
 }
 
 #expedition-signup-form textarea {
@@ -2273,7 +2277,7 @@ input:-webkit-autofill {
   display: inline-block;
   height: 4em;
   font-size: 1em;
-  border: 1px solid #2e2e34;
+  border: 1px solid #888;
   padding: 5px;
 }
 
@@ -2284,7 +2288,6 @@ input:-webkit-autofill {
   justify-content: flex-end;
   -webkit-box-align: center;
   align-items: center;
-  border-top: 1px solid #BF4E42;
   padding-top: 20px;
 }
 

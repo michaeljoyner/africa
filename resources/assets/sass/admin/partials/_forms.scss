@@ -7,6 +7,10 @@
     font-size: small;
   }
 
+  label .label-help {
+    color: $text_grey;
+  }
+
   input[type=text], input[type=email], input[type=password], textarea {
     border-radius: 0;
   }

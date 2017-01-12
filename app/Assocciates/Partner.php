@@ -14,7 +14,7 @@ class Partner extends Model implements HasMediaConversions
 {
     use Publishable, HasModelImage, HasMediaTrait, IsSociable;
 
-    const DEFAULT_MODEL_IMAGE_SRC = '/images/defaults/default.jpeg';
+    const DEFAULT_MODEL_IMAGE_SRC = '/images/defaults/default.jpg';
 
     protected $table = 'partners';
 

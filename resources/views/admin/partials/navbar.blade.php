@@ -16,11 +16,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="/admin/members">Team Members</a></li>
-                <li><a href="/admin/expeditions">Expeditions</a></li>
+                <li><a href="/admin/members"
+                       @if(starts_with(Request::path(), 'admin/member')) class="active" @endif
+                    >Team Members</a>
+                </li>
+                <li><a href="/admin/expeditions" @if(starts_with(Request::path(), 'admin/expeditions'))
+                    class="active" @endif>Expeditions</a></li>
                 <li class="dropdown">
                     <a href="#"
-                       class="dropdown-toggle"
+                       class="dropdown-toggle @if(starts_with(Request::path(), 'admin/partner') || starts_with(Request::path(), 'admin/associate')) active @endif"
                        data-toggle="dropdown"
                        role="button"
                        aria-haspopup="true"
@@ -31,9 +35,9 @@
                         <li><a href="/admin/associates">Sponsors</a></li>
                     </ul>
                 </li>
-                <li><a href="/admin/posts">News</a></li>
-                <li><a href="/admin/albums">Gallery</a></li>
-                <li><a href="/admin/documents">Compliance</a></li>
+                <li><a href="/admin/posts" @if(starts_with(Request::path(), 'admin/post')) class="active" @endif>News</a></li>
+                <li><a href="/admin/albums" @if(starts_with(Request::path(), 'admin/album')) class="active" @endif>Gallery</a></li>
+                <li><a href="/admin/documents" @if(starts_with(Request::path(), 'admin/document')) class="active" @endif>Compliance</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

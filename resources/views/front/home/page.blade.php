@@ -39,7 +39,7 @@
     <img src="/images/dividers/divider4.png" alt="Afrika Freedom Climbers page divider" class="page-divider">
     <section class="page-section" id="compliance">
         <h1 class="section-heading">Compliance</h1>
-        <p class="body-text page-text">At Afrika Freedom Climbers, we completely embrace transparency and we are are a fully compliant charity organisation. Below you will find all the documents that we are required to make public, feel free to click on any title to download.</p>
+        <p class="body-text page-text centered-text">At Afrika Freedom Climbers, we completely embrace transparency and we are are a fully compliant charity organisation. Below you will find all the documents that we are required to make public, feel free to click on any title to download.</p>
         <div class="compliance-documents">
             @foreach($documents as $document)
                 <div class="document">

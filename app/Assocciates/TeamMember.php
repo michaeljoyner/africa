@@ -13,7 +13,7 @@ class TeamMember extends Model implements HasMediaConversions
 {
     use HasMediaTrait, HasModelImage, IsSociable, Publishable;
 
-    const DEFAULT_MODEL_IMAGE_SRC = '/images/defaults/default.jpeg';
+    const DEFAULT_MODEL_IMAGE_SRC = '/images/defaults/default.jpg';
 
     protected $table = 'team_members';
 

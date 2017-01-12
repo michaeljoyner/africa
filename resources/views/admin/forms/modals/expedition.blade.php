@@ -18,12 +18,12 @@
                         <input type="text" name="name" value="{{ old('name') }}" class="form-control">
                     </div>
                     <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                        <label for="description">Description: </label>
+                        <label for="description">Description: <span class="label-help">(Character limit: 180)</span></label>
                         @if($errors->has('description'))
                             <span class="error-message">{{ $errors->first('description') }}</span>
                         @endif
                         <textarea name="description"
-                                  placeholder="A brief description for SEO reasons. You can edit this later."
+                                  placeholder="A brief description. Also for SEO reasons. You can edit this later."
                                   class="form-control"
                         >{{ old('description') }}</textarea>
                     </div>

@@ -32,7 +32,13 @@
         line-height: 1.5;
       }
     }
+
+    ul li:hover a {
+      color: $brand_bright_red;
+    }
   }
+
+
 
   .contact {
     @include respond-to(phone) { order: 1; }
@@ -56,10 +62,10 @@
       }
 
       &:hover {
-        border-color: $brand_alt_red;
+        border-color: $brand_bright_red;
 
         svg path {
-          fill: $brand_alt_red;
+          fill: $brand_bright_red;
         }
       }
     }

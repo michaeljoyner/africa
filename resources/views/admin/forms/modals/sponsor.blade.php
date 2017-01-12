@@ -18,11 +18,13 @@
                         <input type="text" name="name" value="{{ old('name') }}" class="form-control">
                     </div>
                     <div class="form-group{{ $errors->has('writeup') ? ' has-error' : '' }}">
-                        <label for="writeup">Writeup: </label>
+                        <label for="writeup">Writeup: <span class="label-help">(Character limit: 220)</span></label>
                         @if($errors->has('writeup'))
                         <span class="error-message">{{ $errors->first('writeup') }}</span>
                         @endif
-                        <textarea name="writeup" class="form-control">{{ old('writeup') }}</textarea>
+                        <textarea name="writeup"
+                                  placeholder="You can complete or edit this later if you choose."
+                                  class="form-control">{{ old('writeup') }}</textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -18,6 +18,7 @@
     <div>
         <h3>Social Links</h3>
         <p>Only include links that this associate would want shared. Leave blank otherwise.</p>
+        <p>Links must start with either http:// or https://</p>
         <div class="is-2-column">
             @foreach(config('social.platforms') as $platform)
                 <div class="form-group{{ $errors->has($platform) ? ' has-error' : '' }}">

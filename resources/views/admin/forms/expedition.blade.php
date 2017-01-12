@@ -10,7 +10,7 @@
                 <input type="text" name="name" value="{{ old('name') ?? $expedition->name }}" class="form-control">
             </div>
             <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                <label for="description">SEO Description: </label>
+                <label for="description">Short Description: <span class="label-help">(Character limit: 180)</label>
                 @if($errors->has('description'))
                     <span class="error-message">{{ $errors->first('description') }}</span>
                 @endif
