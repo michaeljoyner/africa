@@ -2314,7 +2314,7 @@ input:-webkit-autofill {
 }
 
 .article-index-card {
-  max-width: 800px;
+  max-width: 600px;
   margin: 2em auto;
   display: -webkit-box;
   display: flex;
@@ -2342,7 +2342,16 @@ input:-webkit-autofill {
 }
 
 .article-index-card .article-overview .article-title {
-  margin: 5px 0 5px 0;
+  margin: 15px 0 5px 0;
+  text-transform: uppercase;
+}
+
+.article-show .section-heading.article-heading {
+  font-family: "Rubik", serif;
+}
+
+.article-show .social-icon-row {
+  text-align: center;
 }
 
 .article-show .article-published-date {

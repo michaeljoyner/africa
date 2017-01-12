@@ -1,5 +1,5 @@
 .article-index-card {
-  max-width: 800px;
+  max-width: 600px;
   margin: 2em auto;
   display: flex;
   background: $eggshell;
@@ -23,7 +23,8 @@
     width: 50%;
 
     .article-title {
-      margin: 5px 0 5px 0;
+      margin: 15px 0 5px 0;
+      text-transform: uppercase;
     }
   }
 }
