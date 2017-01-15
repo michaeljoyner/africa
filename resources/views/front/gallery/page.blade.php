@@ -1,7 +1,7 @@
 @extends('front.base')
 
 @section('content')
-    <header class="page-header gallery-banner">
+    <header class="page-header gallery-banner thinner">
 
     </header>
     <section class="page-section">

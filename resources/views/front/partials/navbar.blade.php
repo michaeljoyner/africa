@@ -1,7 +1,7 @@
 <nav class="main-navbar">
     <div class="branding">
         <a href="/">
-            <span class="scrolled-branding">Afrika Freedom Climbers</span>
+            <span class="scrolled-branding @if(Request::path() === '/') scrollable @endif">Afrika Freedom Climbers</span>
             {{--<img src="/images/logos/navlogo.png" alt="Africa Freedom Climbers logo">--}}
             <span class="branding-text">AFC</span>
         </a>

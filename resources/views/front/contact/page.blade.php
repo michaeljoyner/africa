@@ -1,7 +1,7 @@
 @extends('front.base')
 
 @section('content')
-    <header class="page-header contact-banner">
+    <header class="page-header contact-banner thinner">
 
     </header>
     <section class="page-section">

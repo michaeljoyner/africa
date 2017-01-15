@@ -1383,11 +1383,14 @@ input:-webkit-autofill {
   align-items: flex-start;
 }
 
+.main-navbar .branding .scrollable {
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+}
+
 .main-navbar .branding .scrolled-branding {
   -webkit-transition: .4s ease;
   transition: .4s ease;
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0);
   font-family: "Boycott", "Roboto", sans-serif;
   font-size: 24px;
   color: #A62931;
@@ -1587,7 +1590,7 @@ input:-webkit-autofill {
 }
 
 .main-navbar .main-nav-list .nav-item .nav-caret {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-top: 5px;
 }
 
@@ -1622,6 +1625,7 @@ input:-webkit-autofill {
   transform: rotateX(90deg);
   background: #ffffff;
   z-index: -1;
+  border-bottom: 1px solid #A62931;
 }
 
 @media only screen and (max-width: 719px) {
@@ -1632,6 +1636,11 @@ input:-webkit-autofill {
 
 .main-navbar .secondary-nav-list .secondary-nav-item {
   padding: 0 20px;
+  color: #888;
+}
+
+.main-navbar .secondary-nav-list .secondary-nav-item:hover {
+  color: #2e2e34;
 }
 
 @-webkit-keyframes slideIn {
@@ -1851,6 +1860,10 @@ input:-webkit-autofill {
   background: #A62931;
 }
 
+.page-header.thinner {
+  height: 30vw;
+}
+
 .page-section {
   padding: 50px 0 50px;
   position: relative;
@@ -2017,14 +2030,11 @@ input:-webkit-autofill {
 }
 
 .home-banner .logo-backer {
+  display: none;
   background: #ffffff;
   opacity: .7;
   height: 100%;
   width: 700px;
-  -webkit-animation: slideUpIn .75s ease-in both;
-  animation: slideUpIn .75s ease-in both;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
 }
 
 .about-section .body-text {

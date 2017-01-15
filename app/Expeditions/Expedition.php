@@ -48,7 +48,7 @@ class Expedition extends Model implements HasMediaConversions
             ->setManipulations(['w' => 800, 'h' => 600, 'fit' => 'max', 'fm' => 'src'])
             ->performOnCollections('default');
         $this->addMediaConversion('banner')
-            ->setManipulations(['w' => 1400, 'h' => 600, 'fit' => 'crop', 'fm' => 'src'])
+            ->setManipulations(['w' => 1400, 'h' => 467, 'fit' => 'crop', 'fm' => 'src'])
             ->performOnCollections('default');
     }
 }

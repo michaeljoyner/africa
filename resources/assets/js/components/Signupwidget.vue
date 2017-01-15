@@ -3,7 +3,7 @@
 <template>
     <div class="expedition-signup-widget">
         <button class="btn block-btn join-btn" v-on:click="openWidget">
-            <span v-show="!syncing">Join Now</span>
+            <span v-show="!syncing">Enquire</span>
             <div class="spinner" v-show="syncing">
                 <div class="bounce1"></div>
                 <div class="bounce2"></div>
@@ -48,7 +48,7 @@
                             Cancel
                         </button>
                         <button class="btn modal-action-btn" type="submit" form="expedition-signup-form">
-                            Join
+                            Submit
                         </button>
                     </div>
 

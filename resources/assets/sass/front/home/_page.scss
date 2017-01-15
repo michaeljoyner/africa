@@ -19,12 +19,13 @@
   }
 
   .logo-backer {
+    display: none;
     background: $white;
     opacity: .7;
     height: 100%;
     width: 700px;
-    animation: slideUpIn .75s ease-in both;
-    animation-delay: .5s;
+    //animation: slideUpIn .75s ease-in both;
+    //animation-delay: .5s;
   }
 }
 

@@ -3,7 +3,7 @@
 @section('content')
     <header class="page-header home-banner">
         <div class="logo-backer"></div>
-        <img src="/images/logos/logo_hero.png" alt="Afrika Freedom Climbers">
+        <img src="/images/logos/logo_tagline_white.png" alt="Afrika Freedom Climbers">
     </header>
     <section class="page-section about-section" id="about">
         <h1 class="section-heading">About</h1>

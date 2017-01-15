@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    <header class="page-header expedition-banner">
+    <header class="page-header expedition-banner thinner">
 
     </header>
     <section class="page-section expedition-show">
