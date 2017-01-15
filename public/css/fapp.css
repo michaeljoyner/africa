@@ -2439,6 +2439,7 @@ input:-webkit-autofill {
 
 .article-show .article-body img {
   max-width: 100%;
+  margin: 1em auto;
 }
 
 .article-show .back-to-news {
