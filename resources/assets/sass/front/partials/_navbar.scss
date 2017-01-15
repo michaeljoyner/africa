@@ -135,6 +135,7 @@
     padding: 0;
     margin: 0;
 
+
     @include respond-to(phone) {
       position: absolute;
       display: block;
@@ -170,10 +171,42 @@
         color: $brand_red;
       }
 
+      .nav-caret {
+        padding-left: 10px;
+        padding-top: 5px;
+      }
     }
   }
 
-  //}
+  .nav-item:hover .secondary-nav-list {
+    transform: rotateX(0deg);
+    top: $nav_height;
+  }
+
+  .secondary-nav-list {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: -80px;
+    width: 100vw;
+    height: $nav_height;
+    transition: transform .2s ease-out;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    transform-origin: top;
+    transform: rotateX(90deg);
+    background: $white;
+    z-index: -1;
+
+    @include respond-to(phone) { display: none;}
+
+    .secondary-nav-item {
+      padding: 0 20px;
+    }
+  }
 }
 
 @keyframes slideIn {

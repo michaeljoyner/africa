@@ -1586,6 +1586,54 @@ input:-webkit-autofill {
   color: #A62931;
 }
 
+.main-navbar .main-nav-list .nav-item .nav-caret {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.main-navbar .nav-item:hover .secondary-nav-list {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  top: 60px;
+}
+
+.main-navbar .secondary-nav-list {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: -80px;
+  width: 100vw;
+  height: 60px;
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style-type: none;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  background: #ffffff;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 719px) {
+  .main-navbar .secondary-nav-list {
+    display: none;
+  }
+}
+
+.main-navbar .secondary-nav-list .secondary-nav-item {
+  padding: 0 20px;
+}
+
 @-webkit-keyframes slideIn {
   0% {
     -webkit-transform: translate3d(0, 100px, 0);
