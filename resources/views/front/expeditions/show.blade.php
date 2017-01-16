@@ -1,5 +1,9 @@
 @extends('front.base')
 
+@section('title')
+    {{ $expedition->name }} - An Afrika Freedom Climbers Expedition
+@endsection
+
 @section('head')
     <style>
         .expedition-banner {
@@ -7,6 +11,11 @@
             background-size: cover;
         }
     </style>
+    @include('front.partials.ogmeta', [
+        'ogDescription' => $expedition->description,
+        'ogTitle' => $expedition->name . ' - An Afrika Freedom Climbers Expedition',
+        'ogImage' => url($expedition->modelImage())
+    ])
 @endsection
 
 @section('content')

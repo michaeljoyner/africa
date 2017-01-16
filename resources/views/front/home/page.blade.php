@@ -1,5 +1,17 @@
 @extends('front.base')
 
+@section('title')
+    Afrika Freedom Climbers - Reaching The Summit Of Freedom
+@endsection
+
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogDescription' => 'Afrika Freedom Climbers is a non-profit organisation that provides women and children, particularly from rural areas in South Africa, with the opportunity to be trained in and participate in high altitude mountaineering sports.',
+        'ogTitle' => 'Afrika Freedom Climbers - Reaching The Summit Of Freedom',
+        'ogImage' => url('/images/logos/logo_og.jpg')
+    ])
+@endsection
+
 @section('content')
     <header class="page-header home-banner">
         <div class="logo-backer"></div>

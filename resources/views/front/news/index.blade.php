@@ -1,5 +1,17 @@
 @extends('front.base')
 
+@section('title')
+    News - Afrika Freedom Climbers
+@endsection
+
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogDescription' => 'Keep up with the latest news, events and opinions of Afrika Freedom Climbers',
+        'ogTitle' => 'News - Afrika Freedom Climbers',
+        'ogImage' => url('/images/logos/logo_og.jpg')
+    ])
+@endsection
+
 @section('content')
     <header class="page-header news-banner thinner">
 

@@ -1,5 +1,17 @@
 @extends('front.base')
 
+@section('title')
+    {{ $article->title }} - Afrika Freedom Climbers
+@endsection
+
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogDescription' => $article->description,
+        'ogTitle' => $article->title . ' - Afrika Freedom Climbers',
+        'ogImage' => url($article->titleImg())
+    ])
+@endsection
+
 @section('content')
     <article class="page-section article-show">
         <h1 class="section-heading article-heading">{{ $article->title }}</h1>

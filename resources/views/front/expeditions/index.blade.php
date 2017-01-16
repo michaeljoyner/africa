@@ -1,5 +1,17 @@
 @extends('front.base')
 
+@section('title')
+    Expeditions - Afrika Freedom Climbers
+@endsection
+
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogDescription' => 'Afrika Freedom Climbers arrange high altitude mountain expeditions in order to raise funds and promote women in adventure sports. Browse through the expeditions we currently offer and feel free to get in touch.',
+        'ogTitle' => 'Expeditions - Afrika Freedom Climbers',
+        'ogImage' => url('/images/logos/logo_og.jpg')
+    ])
+@endsection
+
 @section('content')
     <header class="page-header expeditions-banner thinner">
 

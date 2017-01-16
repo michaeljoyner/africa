@@ -1,5 +1,17 @@
 @extends('front.base')
 
+@section('title')
+    Gallery - Afrika Freedom Climbers
+@endsection
+
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogDescription' => 'Browse through some of our the shots of Afrika Freedom Climbers and our participants explore and adventure for a good cause.',
+        'ogTitle' => 'Gallery - Afrika Freedom Climbers',
+        'ogImage' => url('/images/logos/logo_og.jpg')
+    ])
+@endsection
+
 @section('content')
     <header class="page-header gallery-banner thinner">
 
