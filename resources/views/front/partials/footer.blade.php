@@ -18,13 +18,13 @@
         <p>+27 (0) 11 465 - 7541</p>
         <p>info@afrikafreedomclimbers.org</p>
         <div class="social-icon-row">
-            <a href="https://www.facebook.com/AfrikaFreedomClimbers/">
+            <a href="https://www.facebook.com/AfrikaFreedomClimbers/" target="_blank">
                 @include('svgicons.social.facebook')
             </a>
-            <a href="https://twitter.com/FreedomClimbers">
+            <a href="https://twitter.com/FreedomClimbers" target="_blank">
                 @include('svgicons.social.twitter')
             </a>
-            <a href="https://www.instagram.com/afrikafreedomclimbers/">
+            <a href="https://www.instagram.com/afrikafreedomclimbers/" target="_blank">
                 @include('svgicons.social.instagram')
             </a>
         </div>
