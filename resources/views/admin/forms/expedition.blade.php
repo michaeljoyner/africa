@@ -60,6 +60,13 @@
                 @endif
                 <input type="text" name="capacity" value="{{ old('capacity') ?? $expedition->capacity }}" class="form-control">
             </div>
+            <div class="form-group{{ $errors->has('places_remaining') ? ' has-error' : '' }}">
+                <label for="places_remaining">Places remaining: </label>
+                @if($errors->has('places_remaining'))
+                <span class="error-message">{{ $errors->first('places_remaining') }}</span>
+                @endif
+                <input type="text" name="places_remaining" value="{{ old('places_remaining') ?? $expedition->places_remaining }}" class="form-control">
+            </div>
             <div class="form-group{{ $errors->has('difficulty') ? ' has-error' : '' }}">
                 <label for="difficulty">Difficulty: </label>
                 @if($errors->has('difficulty'))

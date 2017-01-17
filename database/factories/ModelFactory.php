@@ -61,31 +61,32 @@ $factory->define(App\Assocciates\TeamMember::class, function (Faker\Generator $f
 
 $factory->define(App\Compliance\Document::class, function (Faker\Generator $faker) {
     return [
-        'title'      => $faker->words(3, true),
-        'path'   => null,
+        'title'     => $faker->words(3, true),
+        'path'      => null,
         'published' => false,
     ];
 });
 
 $factory->define(App\Gallery\Album::class, function (Faker\Generator $faker) {
     return [
-        'title'      => $faker->words(3, true),
+        'title'     => $faker->words(3, true),
         'published' => false,
     ];
 });
 
 $factory->define(App\Expeditions\Expedition::class, function (Faker\Generator $faker) {
     return [
-        'name'      => $faker->words(3, true),
-        'description' => $faker->paragraph,
-        'duration' => $faker->sentence,
-        'writeup' => $faker->paragraphs(3, true),
-        'capacity' => $faker->sentence,
-        'location' => $faker->address,
-        'start_date' => $faker->sentence,
-        'end_date' => $faker->sentence,
-        'difficulty' => $faker->words(4, true),
-        'published' => false,
+        'name'             => $faker->words(3, true),
+        'description'      => $faker->paragraph,
+        'duration'         => $faker->sentence,
+        'writeup'          => $faker->paragraphs(3, true),
+        'capacity'         => $faker->sentence,
+        'places_remaining' => $faker->word,
+        'location'         => $faker->address,
+        'start_date'       => $faker->sentence,
+        'end_date'         => $faker->sentence,
+        'difficulty'       => $faker->words(4, true),
+        'published'        => false,
     ];
 });
 
@@ -98,6 +99,6 @@ $factory->define(App\Social\SocialLink::class, function (Faker\Generator $faker)
             return App\Assocciates\Partner::class;
         },
         'platform'      => $faker->randomElement(['twitter', 'facebook', 'email', 'instagram']),
-        'url'          => $faker->url
+        'url'           => $faker->url
     ];
 });

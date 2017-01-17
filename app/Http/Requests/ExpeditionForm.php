@@ -45,6 +45,7 @@ class ExpeditionForm extends FormRequest
             'start_date',
             'end_date',
             'capacity',
+            'places_remaining',
             'difficulty'
         ]))->flatMap(function ($value, $field) {
             return [$field => $value !== '' ? $value : null];

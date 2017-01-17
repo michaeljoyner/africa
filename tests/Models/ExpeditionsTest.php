@@ -67,4 +67,17 @@ class ExpeditionsTest extends TestCase
 
         $this->assertEquals('next tuesday', $expedition->end_date);
     }
+
+    /**
+     *@test
+     */
+    public function an_expedition_has_a_persistable_places_remaining_attribute()
+    {
+        $expedition = factory(Expedition::class)->create(['places_remaining' => 5]);
+
+        $this->seeInDatabase('expeditions', [
+            'id' => $expedition->id,
+            'places_remaining' => 5
+        ]);
+    }
 }

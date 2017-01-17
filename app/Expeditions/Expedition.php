@@ -25,6 +25,7 @@ class Expedition extends Model implements HasMediaConversions
         'difficulty',
         'location',
         'capacity',
+        'places_remaining',
         'start_date',
         'end_date'
     ];

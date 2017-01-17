@@ -21,7 +21,7 @@
                            toggle-url="/admin/albums/{{ $album->id }}/publish"
                            toggle-attribute="publish"
             ></toggle-switch>
-            <p class="lead">The album should have at least a main image, which can be uploaded on the right. The main image counts as part of the gallery and doesn't need to be included with gallery images below. For all album/gallery images, try use images greater than 800px wide.</p>
+            <p class="lead">The album should have at least a main image, which can be uploaded on the right. The main image counts as part of the gallery and doesn't need to be included with gallery images below. For all album/gallery images, you can use any size, but try use images greater than 800px wide. Thumbnails will be cropped to squares.</p>
         </div>
         <div class="col-md-6 single-image-uploader-box">
             <single-upload default="{{ $album->modelImage('thumb') }}"

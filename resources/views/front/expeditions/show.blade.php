@@ -34,7 +34,10 @@
         @if($expedition->duration)
         <p class="expedition-duration body-text"><span class="light-heading">Duration: </span>{{ $expedition->duration }}</p>
         @endif
-        <p class="expedition-capacity body-text"><span class="light-heading">Number of people: </span>{{ $expedition->capacity }}</p>
+        <p class="expedition-capacity body-text"><span class="light-heading">Places available: </span>{{ $expedition->capacity }}</p>
+        @if($expedition->places_remaining)
+            <p class="expedition-capacity body-text"><span class="light-heading">Places remaining: </span>{{ $expedition->places_remaining }}</p>
+        @endif
         <p class="expedition-difficulty body-text"><span class="light-heading">Difficulty: </span>{{ $expedition->difficulty }}</p>
         <p class="body-text page-text">{!! nl2br($expedition->writeup) !!}</p>
         <signup-widget expedition-slug="{{ $expedition->slug }}"

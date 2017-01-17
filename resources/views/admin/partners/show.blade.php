@@ -31,6 +31,7 @@
             </div>
         </div>
         <div class="col-md-6 single-image-uploader-box">
+            <p class="helpful-tip">Try upload images that are perfect squares and larger than 300px x 300px</p>
             <single-upload default="{{ $partner->modelImage('thumb') }}"
                            url="/admin/partners/{{ $partner->id }}/image"
                            shape="square"

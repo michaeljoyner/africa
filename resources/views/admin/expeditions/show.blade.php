@@ -25,12 +25,13 @@
             <p class="lead">{{ $expedition->description }}</p>
         </div>
         <div class="col-md-8 single-image-uploader-box">
+            <p class="helpful-tip">The image you upload needs to work at two different ratios, 4:3 and 10:3. So if there is any important detail try ensure it is centered in the image, and generally try use images wider than 1400px and having a ratio close to 10:3</p>
             <single-upload default="{{ $expedition->modelImage('banner') }}"
                            url="/admin/expeditions/{{ $expedition->id }}/image"
                            shape="square"
                            size="preview"
                            :preview-width="700"
-                           :preview-height="300"
+                           :preview-height="210"
             ></single-upload>
         </div>
     </section>
@@ -52,8 +53,10 @@
             <p class="info-field-value">{{ $expedition->duration ?? 'not set' }}</p>
         </div>
         <div class="col-md-offset2 col-md-5">
-            <p class="info-label">Number of People</p>
+            <p class="info-label">Places Available</p>
             <p class="info-field-value">{{ $expedition->capacity ?? 'not set' }}</p>
+            <p class="info-label">Places Remaining</p>
+            <p class="info-field-value">{{ $expedition->places_remaining ?? 'not set' }}</p>
             <p class="info-label">Difficulty</p>
             <p class="info-field-value">{{ $expedition->difficulty ?? 'not set' }}</p>
         </div>

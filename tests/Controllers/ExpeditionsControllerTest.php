@@ -40,6 +40,7 @@ class ExpeditionsControllerTest extends TestCase
             'duration' => '10 days',
             'difficulty' => 'Extreme',
             'capacity' => '5 peoples',
+            'places_remaining' => '3 persons',
             'start_date' => 'next june',
             'end_date' => '',
             'location' => 'Deepest darkest africa'
@@ -52,6 +53,7 @@ class ExpeditionsControllerTest extends TestCase
                 'duration' => '10 days',
                 'difficulty' => 'Extreme',
                 'capacity' => '5 peoples',
+                'places_remaining' => '3 persons',
                 'start_date' => 'next june',
                 'end_date' => null,
                 'location' => 'Deepest darkest africa'
