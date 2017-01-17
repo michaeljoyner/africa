@@ -28,6 +28,7 @@ class ExpeditionForm extends FormRequest
             'location'   => 'max:255',
             'duration'   => 'max:255',
             'start_date' => 'max:255',
+            'end_date' => 'max:255',
             'capacity'   => 'max:255',
             'difficulty' => 'max:255',
         ];
@@ -42,6 +43,7 @@ class ExpeditionForm extends FormRequest
             'location',
             'duration',
             'start_date',
+            'end_date',
             'capacity',
             'difficulty'
         ]))->flatMap(function ($value, $field) {

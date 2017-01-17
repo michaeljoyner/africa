@@ -32,6 +32,13 @@
                 @endif
                 <input type="text" name="start_date" value="{{ old('start_date') ?? $expedition->start_date }}" class="form-control">
             </div>
+            <div class="form-group{{ $errors->has('end_date') ? ' has-error' : '' }}">
+                <label for="end_date">Expedition End Date: </label>
+                @if($errors->has('end_date'))
+                    <span class="error-message">{{ $errors->first('end_date') }}</span>
+                @endif
+                <input type="text" name="end_date" value="{{ old('end_date') ?? $expedition->end_date }}" class="form-control">
+            </div>
             <div class="form-group{{ $errors->has('duration') ? ' has-error' : '' }}">
                 <label for="duration">Duration: </label>
                 @if($errors->has('duration'))

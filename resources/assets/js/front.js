@@ -29,13 +29,13 @@ const app = new Vue({
     }
 });
 
-window.addEventListener('scroll', lodash.throttle(() => {
-    let scrolled = false;
-    if((window.scrollY > 500) && ! document.body.classList.contains('scrolled')) {
-        document.body.classList.add('scrolled');
-    } else if((window.scrollY < 500) && document.body.classList.contains('scrolled')) {
-        console.log('remove');
-        scrolled = false;
-        document.body.classList.remove('scrolled');
-    }
-}, 150));
+//window.addEventListener('scroll', lodash.throttle(() => {
+//    let scrolled = false;
+//    if((window.scrollY > 500) && ! document.body.classList.contains('scrolled')) {
+//        document.body.classList.add('scrolled');
+//    } else if((window.scrollY < 500) && document.body.classList.contains('scrolled')) {
+//        console.log('remove');
+//        scrolled = false;
+//        document.body.classList.remove('scrolled');
+//    }
+//}, 150));

@@ -15,20 +15,17 @@
     </div>
     <div class="footer-column contact">
         <h3 class="footer-section-header">Get in Touch</h3>
-        <p>+27 83 567 8956</p>
-        <p>hello@afc.com</p>
+        <p>+27 (0) 11 465 - 7541</p>
+        <p>info@afrikafreedomclimbers.org</p>
         <div class="social-icon-row">
-            <a href="#">
+            <a href="https://www.facebook.com/AfrikaFreedomClimbers/">
                 @include('svgicons.social.facebook')
             </a>
-            <a href="#">
+            <a href="https://twitter.com/FreedomClimbers">
                 @include('svgicons.social.twitter')
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/afrikafreedomclimbers/">
                 @include('svgicons.social.instagram')
-            </a>
-            <a href="#">
-                @include('svgicons.social.youtube')
             </a>
         </div>
     </div>

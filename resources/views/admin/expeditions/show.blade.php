@@ -43,17 +43,19 @@
     <section class="row">
         <div class="col-md-5">
             <p class="info-label">Location</p>
-            <p class="info-field-value">{{ $expedition->location }}</p>
+            <p class="info-field-value">{{ $expedition->location ?? 'not set' }}</p>
             <p class="info-label">Start Date</p>
-            <p class="info-field-value">{{ $expedition->start_date }}</p>
+            <p class="info-field-value">{{ $expedition->start_date ?? 'not set' }}</p>
+            <p class="info-label">End Date</p>
+            <p class="info-field-value">{{ $expedition->end_date ?? 'not set' }}</p>
             <p class="info-label">Duration</p>
-            <p class="info-field-value">{{ $expedition->duration }}</p>
+            <p class="info-field-value">{{ $expedition->duration ?? 'not set' }}</p>
         </div>
         <div class="col-md-offset2 col-md-5">
             <p class="info-label">Number of People</p>
-            <p class="info-field-value">{{ $expedition->capacity }}</p>
+            <p class="info-field-value">{{ $expedition->capacity ?? 'not set' }}</p>
             <p class="info-label">Difficulty</p>
-            <p class="info-field-value">{{ $expedition->difficulty }}</p>
+            <p class="info-field-value">{{ $expedition->difficulty ?? 'not set' }}</p>
         </div>
     </section>
     @include('admin.partials.deletemodal')

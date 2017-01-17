@@ -25,8 +25,15 @@
     <section class="page-section expedition-show">
         <h1 class="section-heading">{{ $expedition->name }}</h1>
         <p class="expedition-location body-text"><span class="light-heading">Where: </span>{{ $expedition->location }}</p>
-        <p class="expedition-start-date body-text"><span class="light-heading">When: </span>{{ $expedition->start_date }}</p>
+        @if($expedition->start_date)
+        <p class="expedition-start-date body-text"><span class="light-heading">Starts: </span>{{ $expedition->start_date }}</p>
+        @endif
+        @if($expedition->end_date)
+        <p class="expedition-start-date body-text"><span class="light-heading">Ends: </span>{{ $expedition->end_date }}</p>
+        @endif
+        @if($expedition->duration)
         <p class="expedition-duration body-text"><span class="light-heading">Duration: </span>{{ $expedition->duration }}</p>
+        @endif
         <p class="expedition-capacity body-text"><span class="light-heading">Number of people: </span>{{ $expedition->capacity }}</p>
         <p class="expedition-difficulty body-text"><span class="light-heading">Difficulty: </span>{{ $expedition->difficulty }}</p>
         <p class="body-text page-text">{!! nl2br($expedition->writeup) !!}</p>

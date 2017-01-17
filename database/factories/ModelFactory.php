@@ -83,6 +83,7 @@ $factory->define(App\Expeditions\Expedition::class, function (Faker\Generator $f
         'capacity' => $faker->sentence,
         'location' => $faker->address,
         'start_date' => $faker->sentence,
+        'end_date' => $faker->sentence,
         'difficulty' => $faker->words(4, true),
         'published' => false,
     ];

@@ -25,7 +25,8 @@ class Expedition extends Model implements HasMediaConversions
         'difficulty',
         'location',
         'capacity',
-        'start_date'
+        'start_date',
+        'end_date'
     ];
 
     protected $casts = ['published' => 'boolean'];

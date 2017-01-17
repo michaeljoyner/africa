@@ -54,4 +54,17 @@ class ExpeditionsTest extends TestCase
 
         $expedition->clearMediaCollection();
     }
+
+    /**
+     *@test
+     */
+    public function an_expedition_has_a_persistable_end_date()
+    {
+        $expedition = factory(Expedition::class)->create();
+
+        $expedition->end_date = 'next tuesday';
+        $expedition->save();
+
+        $this->assertEquals('next tuesday', $expedition->end_date);
+    }
 }

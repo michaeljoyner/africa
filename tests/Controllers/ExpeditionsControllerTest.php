@@ -40,7 +40,8 @@ class ExpeditionsControllerTest extends TestCase
             'duration' => '10 days',
             'difficulty' => 'Extreme',
             'capacity' => '5 peoples',
-            'start_date' => '',
+            'start_date' => 'next june',
+            'end_date' => '',
             'location' => 'Deepest darkest africa'
         ])->assertResponseStatus(302)
             ->seeInDatabase('expeditions', [
@@ -51,7 +52,8 @@ class ExpeditionsControllerTest extends TestCase
                 'duration' => '10 days',
                 'difficulty' => 'Extreme',
                 'capacity' => '5 peoples',
-                'start_date' => null,
+                'start_date' => 'next june',
+                'end_date' => null,
                 'location' => 'Deepest darkest africa'
             ]);
     }
