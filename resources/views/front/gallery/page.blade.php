@@ -25,7 +25,7 @@
                                  title="{{ $media->title }}"
                                  main-src="{{ $media->modelImage('thumb') }}"
                                  :gallery-images='{{
-                 json_encode($media->galleryImages()->map(function($image) { return ['src' => $image->getUrl()]; })->toArray())
+                 json_encode($media->galleryImages()->map(function($image) { return ['src' => $image->getUrl('large')]; })->toArray())
                  }}'
                     ></dd-lightbox>
                     <p class="media-image-card-title light-heading">{{ $media->title }}</p>

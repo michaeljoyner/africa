@@ -45,11 +45,8 @@ class Expedition extends Model implements HasMediaConversions
         $this->addMediaConversion('thumb')
             ->setManipulations(['w' => 400, 'h' => 300, 'fit' => 'crop', 'fm' => 'src'])
             ->performOnCollections('default');
-        $this->addMediaConversion('web')
-            ->setManipulations(['w' => 800, 'h' => 600, 'fit' => 'max', 'fm' => 'src'])
-            ->performOnCollections('default');
         $this->addMediaConversion('banner')
-            ->setManipulations(['w' => 1400, 'h' => 467, 'fit' => 'crop', 'fm' => 'src'])
+            ->setManipulations(['w' => 1400, 'h' => 420, 'fit' => 'crop', 'fm' => 'src'])
             ->performOnCollections('default');
     }
 }

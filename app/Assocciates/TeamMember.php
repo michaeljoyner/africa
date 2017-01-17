@@ -26,9 +26,6 @@ class TeamMember extends Model implements HasMediaConversions
         $this->addMediaConversion('thumb')
             ->setManipulations(['w' => 300, 'h' => 300, 'fit' => 'crop', 'fm' => 'src'])
             ->performOnCollections('default');
-        $this->addMediaConversion('web')
-            ->setManipulations(['w' => 800, 'h' => 600, 'fit' => 'max', 'fm' => 'src'])
-            ->performOnCollections('default');
     }
 
     public static function boot()

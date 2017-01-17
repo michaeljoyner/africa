@@ -47,9 +47,6 @@ class Post extends Model implements HasMediaConversions
         $this->addMediaConversion('web')
             ->setManipulations(['w' => 800, 'h' => 600, 'fit' => 'max', 'fm' => 'src'])
             ->performOnCollections('default');
-        $this->addMediaConversion('large')
-            ->setManipulations(['w' => 1400, 'h' => 800, 'fit' => 'max', 'fm' => 'src'])
-            ->performOnCollections('default');
     }
 
     public function author()
