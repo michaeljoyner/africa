@@ -24,6 +24,17 @@
     </header>
     <section class="page-section expedition-show">
         <h1 class="section-heading">{{ $expedition->name }}</h1>
+        <div class="social-icon-row">
+            <a href="https://twitter.com/home?status={{ urlencode($expedition->name . ' ' . Request::url()) }}">
+                @include('svgicons.social.twitter')
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::url()) }}">
+                @include('svgicons.social.facebook')
+            </a>
+            <a href="mailto:?&subject=Read&body={{ Request::url() }}">
+                @include('svgicons.social.email')
+            </a>
+        </div>
         <p class="expedition-location body-text"><span class="light-heading">Where: </span>{{ $expedition->location }}</p>
         @if($expedition->start_date)
         <p class="expedition-start-date body-text"><span class="light-heading">Starts: </span>{{ $expedition->start_date }}</p>

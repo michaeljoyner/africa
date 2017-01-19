@@ -19,7 +19,7 @@
 
     @include respond-to(phone) { width: 90%; }
 
-    &:last-of-type {
+    &:last-of-type:nth-of-type(odd) {
       margin-right: auto;
       margin-left: 5%;
     }
