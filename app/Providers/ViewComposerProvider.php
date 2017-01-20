@@ -16,7 +16,7 @@ class ViewComposerProvider extends ServiceProvider
     public function boot()
     {
         View::composer('front.partials.footer', function ($view) {
-            $latestExpeditions = Expedition::where('published', 1)->latest()->limit(3)->pluck('name', 'slug');
+            $latestExpeditions = Expedition::where('published', 1)->latest()->limit(6)->pluck('name', 'slug');
 
             return $view->with(compact('latestExpeditions'));
         });
