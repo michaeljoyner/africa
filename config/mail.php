@@ -60,8 +60,8 @@ return [
         'name' => 'Example',
     ],
 
-    'site_receiver' => ['Mooz' => 'mooz@example.com'],
-    'site_sender' => ['AFC Site' => 'noreply@afc.com'],
+    'site_receiver' => ['Afrika Freedom Climbers' => 'info@afrikafreedomclimbers.org'],
+    'site_sender' => ['AFC Site' => 'noreply@afrikafreedomclimbers.org'],
 
     /*
     |--------------------------------------------------------------------------
