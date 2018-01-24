@@ -15,7 +15,7 @@
     </div>
     <div class="footer-column contact">
         <h3 class="footer-section-header">Get in Touch</h3>
-        <p>+27 (0) 11 465 - 7541</p>
+        <p>+27 (0) 81 052 1714</p>
         <p>info@afrikafreedomclimbers.org</p>
         <div class="social-icon-row">
             <a href="https://www.facebook.com/AfrikaFreedomClimbers/" target="_blank">
