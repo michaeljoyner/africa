@@ -20,6 +20,8 @@
     <section class="page-section about-section" id="about">
         <h1 class="section-heading">About</h1>
         <p class="body-text page-text large-text">Afrika Freedom Climbers (AFC) is a non-profit organisation founded in September 2013 by three South African women who identified a gap in participation of women in mountaineering sports. We provide women and children, particularly from rural areas in South Africa, with the opportunity to be trained and participate in high altitude mountaineering sports. The services we offer include provision of information about how to participate in high altitude mountaineering sport; arranging high altitude mountain expeditions; and fundraising for specific projects that promote women in adventure sports.</p>
+        <p class="body-text page-text large-text"><strong>Mission: </strong>To empower everyone to reach their own summit of freedom in their chosen arenas.</p>
+        <p class="body-text page-text large-text"><strong>Vision: </strong>Striving to break all barriers to high altitude climbing regardless of background, gender or affordability.</p>
     </section>
     <img src="/images/dividers/divider.png" alt="Afrika Freedom Climbers page divider" class="page-divider">
     <section class="page-section" id="team">
