@@ -60,7 +60,7 @@ return [
         'name' => 'Example',
     ],
 
-    'site_receiver' => ['Afrika Freedom Climbers' => 'info@afrikafreedomclimbers.org'],
+    'site_receiver' => ['Afrika Freedom Climbers' => 'afc@thalesberg.com'],
     'site_sender' => ['AFC Site' => 'noreply@afrikafreedomclimbers.org'],
 
     /*

@@ -16,7 +16,7 @@
     <div class="footer-column contact">
         <h3 class="footer-section-header">Get in Touch</h3>
         <p>+27 (0) 81 052 1714</p>
-        <p>info@afrikafreedomclimbers.org</p>
+        <p>afc@thalesberg.com</p>
         <div class="social-icon-row">
             <a href="https://www.facebook.com/AfrikaFreedomClimbers/" target="_blank">
                 @include('svgicons.social.facebook')
