@@ -40,6 +40,9 @@
             <li class="nav-item heavy-text @if(starts_with(Request::path(), 'news')) active @endif">
                 <a href="/news">News</a>
             </li>
+            <li class="nav-item heavy-text @if(starts_with(Request::path(), 'news')) active @endif">
+                <a href="/donate">Donate</a>
+            </li>
             <li class="nav-item heavy-text  @if(starts_with(Request::path(), 'contact')) active @endif">
                 <a href="/contact">Contact Us</a>
             </li>

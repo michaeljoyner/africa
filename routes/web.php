@@ -16,6 +16,8 @@ Route::get('/', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 Route::get('gallery', 'PagesController@gallery');
 
+Route::get('donate', 'PagesController@donate');
+
 Route::get('news', 'NewsController@index');
 Route::get('news/{slug}', 'NewsController@show');
 

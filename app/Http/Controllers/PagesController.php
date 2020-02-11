@@ -30,4 +30,8 @@ class PagesController extends Controller
         $albums = Album::where('published', 1)->latest()->get();
         return view('front.gallery.page')->with(compact('albums'));
     }
+
+    public function donate() {
+        return view('front.donate.page');
+    }
 }
