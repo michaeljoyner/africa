@@ -28,6 +28,9 @@
                 @include('svgicons.social.instagram')
             </a>
         </div>
+        <h3 class="footer-section-header">
+            <a href="/donate">Donate now</a>
+        </h3>
     </div>
     <div class="footer-column">
         <h3 class="footer-section-header">Latest Expeditions</h3>
