@@ -1,7 +1,7 @@
 @extends('front.base')
 
 @section('title')
-    Contact Us - Afrika Freedom Climbers
+    Donate - Afrika Freedom Climbers
 @endsection
 
 @section('head')
