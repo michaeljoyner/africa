@@ -24,7 +24,7 @@
             <a href="https://twitter.com/FreedomClimbers" target="_blank">
                 @include('svgicons.social.twitter')
             </a>
-            <a href="https://www.instagram.com/afrikafreedomclimbers/" target="_blank">
+            <a href="https://www.instagram.com/freedom_climbers/" target="_blank">
                 @include('svgicons.social.instagram')
             </a>
         </div>
