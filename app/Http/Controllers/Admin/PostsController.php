@@ -58,7 +58,7 @@ class PostsController extends Controller
 
         $this->flasher->success('Post Info Updated', 'You have successfully updated the post');
 
-        return redirect('admin');
+        return redirect("admin/posts/{$post->id}");
     }
 
     public function delete(Post $post)
