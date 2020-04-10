@@ -1,4 +1,4 @@
-<form action="/admin/posts/{{ $post->id }}" class="dd-form form-horizontal">
+<form action="/admin/posts/{{ $post->id }}" class="dd-form form-horizontal" method="POST">
     {!! csrf_field() !!}
     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
         <label for="title">Title: </label>
@@ -12,7 +12,7 @@
         @if($errors->has('description'))
         <span class="error-message">{{ $errors->first('description') }}</span>
         @endif
-        <textarea name="description" class="form-control">{{ old('description') ?? $post->description }}</textarea>
+        <textarea name="description" class="form-control" style="min-height: 10rem;">{{ old('description') ?? $post->description }}</textarea>
     </div>
     <div class="form-group">
         <button type="submit" class="btn dd-btn">Save Changes</button>
