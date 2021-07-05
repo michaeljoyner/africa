@@ -88,8 +88,8 @@
                 editor.on('Change', (e) => this.markDirty());
             };
             config.setup = (ed) => {
-                ed.ui.registry.addButton('insert-image-btn', this.makeButton('/images/assets/insert_photo_black.png', this.openUploadModal));
-                ed.ui.registry.addButton('save_button', this.makeButton('/images/assets/save_button_icon.png', () => this.saveContent(false)));
+                ed.ui.registry.addButton('insert-image-btn', this.makeButton('image', this.openUploadModal));
+                ed.ui.registry.addButton('save_button', this.makeButton('save', () => this.saveContent(false)));
             }
             this.$nextTick(() => tinymce.init(config)
                     .then((editors) => this.editor = editors[0])
