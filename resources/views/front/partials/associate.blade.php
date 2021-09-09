@@ -4,9 +4,16 @@
     <p class="member-info body-text">{{ $associate->writeup }}</p>
     <div class="social-icon-row">
         @foreach($associate->socialLinks as $link)
-            <a href="{{ $link->url }}">
-                @include('svgicons.social.' . $link->platform)
-            </a>
+            @if($link->platform === 'email')
+                <a href="mailto:{{ $link->url }}">
+                    @include('svgicons.social.' . $link->platform)
+                </a>
+            @else
+                <a href="{{ $link->url }}">
+                    @include('svgicons.social.' . $link->platform)
+                </a>
+            @endif
+
         @endforeach
     </div>
 </div>
