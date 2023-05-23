@@ -15,7 +15,7 @@
     </div>
     <div class="footer-column contact">
         <h3 class="footer-section-header">Get in Touch</h3>
-        <p>+27 (0) 73 239 7554</p>
+
         <p>info@afrikafreedomclimbers.org</p>
         <div class="social-icon-row">
             <a href="https://www.facebook.com/AfrikaFreedomClimbers/" target="_blank">
