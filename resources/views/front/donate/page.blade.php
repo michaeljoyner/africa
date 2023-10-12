@@ -31,17 +31,17 @@
             <img alt="" border="0" src="https://www.paypal.com/en_ZA/i/scr/pixel.gif" width="1" height="1" />
         </form>
 
-        <p class="body-text large-text page-text centered-text">Alternately, you may use our bank details directly:</p>
+{{--        <p class="body-text large-text page-text centered-text">Alternately, you may use our bank details directly:</p>--}}
 
-        <p class="body-text large-text page-text">
-        <strong>Account name:</strong> Afrika Freedom Climbers NPC<br />
-        <strong>Bank:</strong> First National Bank<br />
-        <strong>Account No:</strong> 62836697055<br />
-        <strong>Branch Code:</strong> 252145<br />
-        <strong>Branch Name:</strong> Hatfield<br />
-        <strong>Swift code:</strong> FIRNZAJJ<br />
-        <strong>Bank Address:</strong> Shop 39, Lynwood Road, Hillcrest Boulevard Shopping Center, Hatfield<br />
-        </p>
+{{--        <p class="body-text large-text page-text">--}}
+{{--        <strong>Account name:</strong> Afrika Freedom Climbers NPC<br />--}}
+{{--        <strong>Bank:</strong> First National Bank<br />--}}
+{{--        <strong>Account No:</strong> 62836697055<br />--}}
+{{--        <strong>Branch Code:</strong> 252145<br />--}}
+{{--        <strong>Branch Name:</strong> Hatfield<br />--}}
+{{--        <strong>Swift code:</strong> FIRNZAJJ<br />--}}
+{{--        <strong>Bank Address:</strong> Shop 39, Lynwood Road, Hillcrest Boulevard Shopping Center, Hatfield<br />--}}
+{{--        </p>--}}
 
         <p class="body-text large-text page-text"><strong>Registration Details</strong><br />
         Company Reg: 2013/169626/08</p>
