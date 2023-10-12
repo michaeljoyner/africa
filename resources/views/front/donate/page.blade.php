@@ -43,8 +43,8 @@
 {{--        <strong>Bank Address:</strong> Shop 39, Lynwood Road, Hillcrest Boulevard Shopping Center, Hatfield<br />--}}
 {{--        </p>--}}
 
-        <p class="body-text large-text page-text"><strong>Registration Details</strong><br />
-        Company Reg: 2013/169626/08</p>
+{{--        <p class="body-text large-text page-text"><strong>Registration Details</strong><br />--}}
+{{--        Company Reg: 2013/169626/08</p>--}}
     </section>
 
 @endsection
